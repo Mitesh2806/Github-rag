@@ -10,6 +10,7 @@ import { api } from "@/trpc/react";
 
 export default function Dashboard() {
   const { project, projectId } = useProject();
+  //@ts-ignore
   const [commits, setCommits] = useState<Commit[]>([]);
   
   const { data } = api.project.getCommits.useQuery(

@@ -60,6 +60,7 @@ export default function AppSidebar() {
 
     const handleProjectSelect = (id: string) => {
         setProjectId(id);
+        router.push("/dashboard"); 
     };
 
     const handleCreateProject = () => {

@@ -10,7 +10,7 @@ export const aiSummariseCommit = async (diff: string) => {
         `You are an expert programmer analyzing a git diff. Provide a concise, point-by-point summary of the changes.
 
 INSTRUCTIONS:
-1. Focus ONLY on actual code changes, not context lines
+1. Focus ONLY on actual code changes done by the user committing the commit, not context lines
 2. Group related changes by file or functionality
 3. Format each change as a bullet point starting with "•"
 4. For each change, briefly explain WHAT changed and WHY it matters (if obvious from context)
